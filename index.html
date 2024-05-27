@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeTetris</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CodeTetris</h1>
+    <div id="game-container">
+        <canvas id="game-board"></canvas>
+        <div id="controls">
+            <button onclick="startGame()">Start Game</button>
+            <div id="level-display">Level: 0</div>
+            <div id="code-editor">
+                <h3>Edit Code:</h3>
+                <textarea id="code-input" rows="10" cols="30">
+// JavaScript code to modify game properties
+const pieceColor = '#00f'; // Color of the pieces
+const gameSpeed = 1000; // Speed of the game in milliseconds
+                </textarea>
+                <button onclick="applyCode()">Apply Code</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
